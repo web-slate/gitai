@@ -48,3 +48,9 @@ pip install --upgrade pip
 ```
 pip install -r requirements.txt
 ```
+
+### Training the Model
+
+```
+python -m gitai.model_training
+```
