@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+GitAI_LLM/GitQA_RAG/chroma_db/chroma.sqlite3
+
+
+
 # C extensions
 *.so
 
@@ -118,3 +122,4 @@ dmypy.json
 *.swp
 *.swo
 *.swn
+GitAI_LLM/GitQA_RAG/chroma_db/chroma.sqlite3
