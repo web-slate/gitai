@@ -1,4 +1,3 @@
-
 ## Overview
 This project extracts and processes content from a list of URLs, generating a JSONL file in a specific format. The extracted data includes sections of the webpage and their descriptions, structured as chat messages for a virtual assistant.
 
