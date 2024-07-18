@@ -3,7 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-GitAI_LLM/GitQA_RAG/chroma_db/chroma.sqlite3
+CommandRetrieval/chroma_db
+RAGQABot/chroma_db
 
 
 
