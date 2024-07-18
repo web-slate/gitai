@@ -28,6 +28,9 @@ for doc in docs:
     print(f"Description: {data['description']}")
     print("Parameters:")
     for param in data['parameters']:
-        print(f"- {param['param']}: {param['param_description']})")
-
+        print(f" - {param['param']}: {param['param_description']}")
+    # print(data) 
     print('='*50)
+
+
+    
