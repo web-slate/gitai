@@ -1,0 +1,606 @@
+[
+  {
+    "command": "brew install git",
+    "description": "Installs Git with Homebrew on Mac OS.",
+    "parameters": []
+  },
+  {
+    "command": "sudo port selfupdate",
+    "description": "Installs Git with MacPorts on Mac OS.",
+    "parameters": []
+  },
+  {
+    "command": "sudo apt-get install git",
+    "description": "Installs Git on Linux.",
+    "parameters": []
+  },
+  {
+    "command": "git --version",
+    "description": "Shows the current version of Git installed.",
+    "parameters": []
+  },
+  {
+    "command": "git init",
+    "description": "Initializes a new Git repository in the current directory.",
+    "parameters": []
+  },
+  {
+    "command": "git init <directory>",
+    "description": "Creates a new Git repository in the specified directory.",
+    "parameters": [
+      {
+        "param": "<directory>",
+        "param_description": "The directory path where the new Git repository will be initialized."
+      }
+    ]
+  },
+  {
+    "command": "git clone <repository_url>",
+    "description": "Clones a repository from a remote server to your local machine.",
+    "parameters": [
+      {
+        "param": "<repository_url>",
+        "param_description": "The URL of the repository to clone."
+      }
+    ]
+  },
+  {
+    "command": "git clone --branch <branch_name> <repository_url>",
+    "description": "Clones a specific branch from a repository.",
+    "parameters": [
+      {
+        "param": "<branch_name>",
+        "param_description": "The name of the branch to clone."
+      },
+      {
+        "param": "<repository_url>",
+        "param_description": "The URL of the repository to clone from."
+      }
+    ]
+  },
+  {
+    "command": "git add <file>",
+    "description": "Adds a specific file to the staging area.",
+    "parameters": [
+      {
+        "param": "<file>",
+        "param_description": "The path of the file to add to the staging area."
+      }
+    ]
+  },
+  {
+    "command": "git add .",
+    "description": "Adds all modified and new files to the staging area.",
+    "parameters": []
+  },
+  {
+    "command": "git status",
+    "description": "Shows the current state of your repository, including tracked and untracked files, modified files, and branch information.",
+    "parameters": []
+  },
+  {
+    "command": "git status --ignored",
+    "description": "Displays ignored files in addition to the regular status output.",
+    "parameters": []
+  },
+  {
+    "command": "git diff",
+    "description": "Shows the changes between the working directory and the staging area (index).",
+    "parameters": []
+  },
+  {
+    "command": "git diff <commit1> <commit2>",
+    "description": "Displays the differences between two commits.",
+    "parameters": [
+      {
+        "param": "<commit1>",
+        "param_description": "The ID or reference of the first commit."
+      },
+      {
+        "param": "<commit2>",
+        "param_description": "The ID or reference of the second commit."
+      }
+    ]
+  },
+  {
+    "command": "git diff --staged",
+    "description": "Displays the changes between the staging area (index) and the last commit.",
+    "parameters": []
+  },
+  {
+    "command": "git diff HEAD",
+    "description": "Displays the difference between the current directory and the last commit.",
+    "parameters": []
+  },
+  {
+    "command": "git commit",
+    "description": "Creates a new commit with the changes in the staging area and opens the default text editor for adding a commit message.",
+    "parameters": []
+  },
+  {
+    "command": "git commit -m \"<message>\"",
+    "description": "Creates a new commit with the changes in the staging area and specifies the commit message inline.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The commit message describing the changes."
+      }
+    ]
+  },
+  {
+    "command": "git commit -a",
+    "description": "Commits all modified and deleted files in the repository without explicitly using git add to stage the changes.",
+    "parameters": []
+  },
+  {
+    "command": "git notes add",
+    "description": "Creates a new note and associates it with an object (commit, tag, etc.).",
+    "parameters": []
+  },
+  {
+    "command": "git restore <file>",
+    "description": "Restores the file in the working directory to its state in the last commit.",
+    "parameters": [
+      {
+        "param": "<file>",
+        "param_description": "The file to restore to the last commit state."
+      }
+    ]
+  },
+  {
+    "command": "git reset <commit>",
+    "description": "Moves the branch pointer to a specified commit, resetting the staging area and the working directory to match the specified commit.",
+    "parameters": [
+      {
+        "param": "<commit>",
+        "param_description": "The commit to reset the branch to."
+      }
+    ]
+  },
+  {
+    "command": "git reset --soft <commit>",
+    "description": "Moves the branch pointer to a specified commit, preserving the changes in the staging area and the working directory.",
+    "parameters": [
+      {
+        "param": "<commit>",
+        "param_description": "The commit to reset the branch soft to."
+      }
+    ]
+  },
+  {
+    "command": "git reset --hard <commit>",
+    "description": "Moves the branch pointer to a specified commit, discarding all changes in the staging area and the working directory.",
+    "parameters": [
+      {
+        "param": "<commit>",
+        "param_description": "The commit to reset the branch hard to."
+      }
+    ]
+  },
+  {
+    "command": "git rm <file>",
+    "description": "Removes a file from both the working directory and the repository, staging the deletion.",
+    "parameters": [
+      {
+        "param": "<file>",
+        "param_description": "The file to remove from the repository."
+      }
+    ]
+  },
+  {
+    "command": "git mv",
+    "description": "Moves or renames a file or directory in your Git repository.",
+    "parameters": []
+  },
+  {
+    "command": "git commit -m \"feat: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to indicate a new feature commit.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the new feature."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"fix: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to fix bugs in the codebase.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the bug fix."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"chore: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to show routine tasks or maintenance.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the chore."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"refactor: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to change the codebase and improve the structure.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the refactor."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"docs: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to change the documentation.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the documentation change."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"style: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to change the styling and formatting of the codebase.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the style change."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"test: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to indicate test-related changes.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the test change."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"perf: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to indicate performance-related changes.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the performance change."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"ci: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to indicate continuous integration (CI) system-related changes.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the CI change."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"build: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to indicate changes related to the build process.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the build change."
+      }
+    ]
+  },
+  {
+    "command": "git commit -m \"revert: <message>\"",
+    "description": "Creates a new commit in a Git repository with a specific message to indicate changes related to reverting a previous commit.",
+    "parameters": [
+      {
+        "param": "<message>",
+        "param_description": "The message describing the revert change."
+      }
+    ]
+  },
+  {
+    "command": "git branch",
+    "description": "Lists all branches in the repository.",
+    "parameters": []
+  },
+  {
+    "command": "git branch <branch_name>",
+    "description": "Creates a new branch with the specified name.",
+    "parameters": [
+      {
+        "param": "<branch_name>",
+        "param_description": "The name of the new branch to create."
+      }
+    ]
+  },
+  {
+    "command": "git branch -d <branch_name>",
+    "description": "Deletes the specified branch.",
+    "parameters": [
+      {
+        "param": "<branch_name>",
+        "param_description": "The name of the branch to delete."
+      }
+    ]
+  },
+  {
+    "command": "git branch -a",
+    "description": "Lists all local and remote branches in the repository.",
+    "parameters": []
+  },
+  {
+    "command": "git branch -r",
+    "description": "Lists all remote branches in the repository.",
+    "parameters": []
+  },
+  {
+    "command": "git checkout <branch_name>",
+    "description": "Switches to the specified branch.",
+    "parameters": [
+      {
+        "param": "<branch_name>",
+        "param_description": "The name of the branch to switch to."
+      }
+    ]
+  },
+  {
+    "command": "git checkout -b <new_branch_name>",
+    "description": "Creates a new branch with the specified name and switches to it.",
+    "parameters": [
+      {
+        "param": "<new_branch_name>",
+        "param_description": "The name of the new branch to create and switch to."
+      }
+    ]
+  },
+  {
+    "command": "git checkout -- <file>",
+    "description": "Discards changes made to the specified file and reverts it to the version in the last commit.",
+    "parameters": [
+      {
+        "param": "<file>",
+        "param_description": "The file to discard changes for."
+      }
+    ]
+  },
+  {
+    "command": "git merge <branch_name>",
+    "description": "Merges the specified branch into the current branch.",
+    "parameters": [
+      {
+        "param": "<branch_name>",
+        "param_description": "The name of the branch to merge into the current branch."
+      }
+    ]
+  },
+  {
+    "command": "git log",
+    "description": "Displays the commit history of the current branch.",
+    "parameters": []
+  },
+  {
+    "command": "git log <branch_name>",
+    "description": "Displays the commit history of the specified branch.",
+    "parameters": [
+      {
+        "param": "<branch_name>",
+        "param_description": "The name of the branch to show the commit history for."
+      }
+    ]
+  },
+  {
+    "command": "git log --follow <file>",
+    "description": "Displays the commit history of a file, including its renames.",
+    "parameters": [
+      {
+        "param": "<file>",
+        "param_description": "The file to show the commit history for."
+      }
+    ]
+  },
+  {
+    "command": "git log --all",
+    "description": "Displays the commit history of all branches in the repository.",
+    "parameters": []
+  },
+  {
+    "command": "git stash",
+    "description": "Stashes the changes in the working directory, allowing you to switch to a different branch or commit without committing the changes.",
+    "parameters": []
+  },
+  {
+    "command": "git stash list",
+    "description": "Lists all stashes in the repository.",
+    "parameters": []
+  },
+  {
+    "command": "git stash pop",
+    "description": "Applies and removes the most recent stash from the stash list.",
+    "parameters": []
+  },
+  {
+    "command": "git stash drop",
+    "description": "Removes the most recent stash from the stash list.",
+    "parameters": []
+  },
+  {
+    "command": "git tag",
+    "description": "Lists all tags in the repository.",
+    "parameters": []
+  },
+  {
+    "command": "git tag <tag_name>",
+    "description": "Creates a lightweight tag at the current commit.",
+    "parameters": [
+      {
+        "param": "<tag_name>",
+        "param_description": "The name of the tag to create."
+      }
+    ]
+  },
+  {
+    "command": "git tag <tag_name> <commit>",
+    "description": "Creates a lightweight tag at the specified commit.",
+    "parameters": [
+      {
+        "param": "<tag_name>",
+        "param_description": "The name of the tag to create."
+      },
+      {
+        "param": "<commit>",
+        "param_description": "The commit to tag."
+      }
+    ]
+  },
+  {
+    "command": "git tag -a <tag_name> -m \"<message>\"",
+    "description": "Creates an annotated tag at the current commit with a custom message.",
+    "parameters": [
+      {
+        "param": "<tag_name>",
+        "param_description": "The name of the tag to create."
+      },
+      {
+        "param": "<message>",
+        "param_description": "The message describing the tag."
+      }
+    ]
+  },
+  {
+    "command": "git fetch",
+    "description": "Retrieves changes from a remote repository, including new branches and commits.",
+    "parameters": []
+  },
+  {
+    "command": "git fetch <remote>",
+    "description": "Retrieves changes from the specified remote repository.",
+    "parameters": [
+      {
+        "param": "<remote>",
+        "param_description": "The name of the remote repository to fetch changes from."
+      }
+    ]
+  },
+  {
+    "command": "git fetch --prune",
+    "description": "Retrieves changes from a remote repository and removes any remote-tracking branches that no longer exist on the remote repository.",
+    "parameters": []
+  },
+  {
+    "command": "git pull",
+    "description": "Fetches changes from the remote repository and merges them into the current branch.",
+    "parameters": []
+  },
+  {
+    "command": "git pull <remote>",
+    "description": "Fetches changes from the specified remote repository and merges them into the current branch.",
+    "parameters": [
+      {
+        "param": "<remote>",
+        "param_description": "The name of the remote repository to pull changes from."
+      }
+    ]
+  },
+  {
+    "command": "git pull --rebase",
+    "description": "Fetches changes from the remote repository and rebases the current branch onto the updated branch.",
+    "parameters": []
+  },
+  {
+    "command": "git push",
+    "description": "Pushes local commits to the remote repository.",
+    "parameters": []
+  },
+  {
+    "command": "git push <remote>",
+    "description": "Pushes local commits to the specified remote repository.",
+    "parameters": [
+      {
+        "param": "<remote>",
+        "param_description": "The name of the remote repository to push commits to."
+      }
+    ]
+  },
+  {
+    "command": "git push <remote> <branch>",
+    "description": "Pushes local commits to the specified branch of the remote repository.",
+    "parameters": [
+      {
+        "param": "<remote>",
+        "param_description": "The name of the remote repository."
+      },
+      {
+        "param": "<branch>",
+        "param_description": "The name of the branch to push commits to."
+      }
+    ]
+  },
+  {
+    "command": "git push --all",
+    "description": "Pushes all branches to the remote repository.",
+    "parameters": []
+  },
+  {
+    "command": "git remote",
+    "description": "Lists all remote repositories.",
+    "parameters": []
+  },
+  {
+    "command": "git remote add <name> <url>",
+    "description": "Adds a new remote repository with the specified name and URL.",
+    "parameters": [
+      {
+        "param": "<name>",
+        "param_description": "The name of the new remote repository."
+      },
+      {
+        "param": "<url>",
+        "param_description": "The URL of the new remote repository."
+      }
+    ]
+  },
+  {
+    "command": "git show <commit>",
+    "description": "Shows the details of a specific commit, including its changes.",
+    "parameters": [
+      {
+        "param": "<commit>",
+        "param_description": "The ID or reference of the commit to show details for."
+      }
+    ]
+  },
+  {
+    "command": "git revert <commit>",
+    "description": "Creates a new commit that undoes the changes introduced by the specified commit.",
+    "parameters": [
+      {
+        "param": "<commit>",
+        "param_description": "The commit to revert."
+      }
+    ]
+  },
+  {
+    "command": "git revert --no-commit <commit>",
+    "description": "Undoes the changes introduced by the specified commit, but does not create a new commit.",
+    "parameters": [
+      {
+        "param": "<commit>",
+        "param_description": "The commit to revert."
+      }
+    ]
+  },
+  {
+    "command": "git rebase <branch>",
+    "description": "Reapplies commits on the current branch onto the tip of the specified branch.",
+    "parameters": [
+      {
+        "param": "<branch>",
+        "param_description": "The branch to rebase onto."
+      }
+    ]
+  }
+]
