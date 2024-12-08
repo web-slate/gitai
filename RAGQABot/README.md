@@ -25,7 +25,7 @@ Set up your Hugging Face access token:
 
 ## Configuration
 
-```
+```python
 config = {
   'llm': {
     'provider': 'huggingface',
@@ -61,3 +61,33 @@ app.query("How to find difference between 2 git commits")
 - To change the embedding model, update the `model` under the `embedder` configuration.
 - To use a different vector database, change the `provider` and `config` under the `vectordb` configuration.
 
+## Contributing
+
+We welcome contributions to improve and expand the RAG QA Bot project. Here are some ways you can contribute:
+
+### Areas for Contribution
+
+1. Expanding the Git knowledge base
+2. Improving answer quality
+3. Performance optimization
+4. Multi-language support
+
+### Contributing Guidelines
+
+1. Fork the repository and create a new branch for your feature or bug fix.
+2. Follow the coding style and conventions used in the existing codebase.
+3. Write clear, concise commit messages.
+4. Add or update tests as necessary to cover your changes.
+5. Update the documentation to reflect any changes in functionality or usage.
+6. Submit a pull request with a clear description of your changes and their benefits.
+
+
+### Reporting Issues
+
+If you encounter any bugs or have suggestions for improvements:
+
+1. Check if the issue already exists in the project's issue tracker.
+2. If not, create a new issue with a clear title and description.
+3. Include steps to reproduce the problem and any relevant error messages.
+
+By contributing, you help make the RAG QA Bot more powerful, efficient, and user-friendly. Your efforts will benefit the entire Git community. Thank you for your support!

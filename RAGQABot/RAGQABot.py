@@ -1,6 +1,6 @@
 import os
 # Replace this with your HF token
-# os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "hf_xxxx"
+os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "hf_xxx"
 
 from embedchain import App
 
@@ -29,7 +29,7 @@ config = {
 
 app = App.from_config(config=config)
 app.add("./RAGQABot/CombinedQA.jsonl")
-response = app.query("How to find difference between 2 git commits")
+response = app.query("git rebase vs git merge along with example commands")
 
 print(response)
 

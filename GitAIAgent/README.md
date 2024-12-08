@@ -11,13 +11,13 @@ GitAI Agent is an AI-powered assistant that can execute Git commands through nat
 - OpenAI API key
 - Git installed and configured on your system
 
-## SetUp
-Install Dependencies
+## Setup
+1. Install Dependencies
    ```
    pip install langchain openai
    ```
 
-Set up your OpenAI API key:
+2. Set up your OpenAI API key:
    ```
    export OPENAI_API_KEY=your_api_key_here
    ```
@@ -27,7 +27,25 @@ Set up your OpenAI API key:
 Run the GitAI agent script:
 
 ```
-python GitAI.py
+python GitAIAgent.py
 ```
 
 The agent will prompt you for a Git-related task. Enter your request in natural language, and the agent will interpret and execute the appropriate Git commands.
+
+## Contributing
+
+We welcome contributions to improve and expand the GitAI Agent. Here are some ways you can contribute:
+
+### Enhancing Security with Guardrails
+
+One of the key areas for contribution is implementing and improving guardrails for the shell tool. This involves adding safety checks and input validation to ensure that only safe Git commands are executed. Contributors are encouraged to think about potential security risks and propose solutions.
+
+### Other Contribution Areas
+
+- Enhancing the agent's capabilities to handle more complex Git scenarios
+- Improving error handling and user feedback
+- Expanding the documentation with more examples and use cases
+- Adding comprehensive test coverage
+- Reporting issues and suggesting improvements
+
+When contributing, please ensure that your changes align with the project's goals of maintaining a balance between functionality and security.

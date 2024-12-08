@@ -4,7 +4,7 @@ GitAI is a project aimed at assisting developers in learning and using Git comma
 
 
 ### 1. Fine-tuned LLMs 
-**[Hugging Face Link](https://huggingface.co/collections/YashJain/gitai-66716f5414a2d8e2b6d93bd9)**
+<!-- **[Hugging Face Link](https://huggingface.co/collections/YashJain/gitai-66716f5414a2d8e2b6d93bd9)** -->
 
 We fine-tuned two smaller language models to run locally:
 
